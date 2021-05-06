@@ -28,8 +28,7 @@ const isReadingOwnUser = rule()((parent, {id}, {user}) => {
 const permissions = shield({
     Query: {
         user: or(and(canReadOwnUser, isReadingOwnUser), canReadAnyUser),
-        users: canReadAnyUser,
-        viewer: isAuthenticated
+        users: canReadAnyUser
     }
 });
 

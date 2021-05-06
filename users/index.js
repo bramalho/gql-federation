@@ -16,7 +16,6 @@ const typeDefs = gql`
     extend type Query {
         user(id: ID!): User
         users: [User]
-        viewer: User!
     }
     extend type Mutation {
         login(email: String!, password: String!): String
@@ -35,9 +34,6 @@ const resolvers = {
         },
         users() {
             return users;
-        },
-        viewer(parent, args, {user}) {
-            return users.find(user => user.id === user.sub);
         }
     },
     Mutation: {
