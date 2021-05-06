@@ -6,7 +6,8 @@
   "scripts": {
     "server": "concurrently -k npm:server:*",
     "server:users": "nodemon ./users/index.js",
-    "server:gateway": "wait-on tcp:4001 && nodemon ./gateway/index.js"
+    "server:products": "nodemon ./products/index.js",
+    "server:gateway": "wait-on tcp:4001 && wait-on tcp:4002 && nodemon ./gateway/index.js"
   },
   "repository": {
     "type": "git",

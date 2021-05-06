@@ -46,3 +46,59 @@ query {
   }
 }
 ```
+
+## Get Products
+
+```gql
+query {
+  products {
+    id
+    sku
+    name
+    price
+    status
+  }
+}
+```
+
+or
+
+```gql
+query {
+  products(status: PUBLISHED) {
+    id
+    sku
+    name
+    price
+    status
+  }
+}
+```
+
+## Get Product
+
+```gql
+query {
+  product(id: 1) {
+    id
+    sku
+    name
+    price
+    status
+  }
+}
+```
+
+## Update Product Status
+
+```gql
+mutation {
+  updateProductStatus(id: 1, status: REMOVED) {
+    id
+    sku
+    name
+    price
+    status
+  }
+}
+```

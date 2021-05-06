@@ -16,7 +16,8 @@ app.use(
 
 const gateway = new ApolloGateway({
     serviceList: [
-        {name: "users", url: "http://localhost:4001"}
+        {name: "users", url: "http://localhost:4001"},
+        {name: "products", url: "http://localhost:4002"}
     ],
     buildService({name, url}) {
         return new RemoteGraphQLDataSource({
