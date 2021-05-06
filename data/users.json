@@ -9,7 +9,9 @@
     ],
     "permissions": [
       "read:any_user",
-      "read:own_user"
+      "read:own_user",
+      "read:products",
+      "write:products"
     ]
   },
   {
@@ -21,7 +23,8 @@
       "user"
     ],
     "permissions": [
-      "read:own_user"
+      "read:own_user",
+      "read:products"
     ]
   }
 ]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "sku": "AAA111",
+    "name": "Product 1",
+    "price": 100,
+    "status": "PUBLISHED"
+  },
+  {
+    "id": "2",
+    "sku": "BBB222",
+    "name": "Product 2",
+    "price": 200,
+    "status": "WAITING"
+  },
+  {
+    "id": "3",
+    "sku": "CCC333",
+    "name": "Product 3",
+    "price": 300,
+    "status": "REMOVED"
+  },
+  {
+    "id": "4",
+    "sku": "DDD444",
+    "name": "Product 4",
+    "price": 400,
+    "status": "PUBLISHED"
+  },
+  {
+    "id": "5",
+    "sku": "EEE555",
+    "name": "Product 5",
+    "price": 500,
+    "status": "PUBLISHED"
+  }
+]
