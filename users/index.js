@@ -6,6 +6,8 @@ const {permissions} = require("./permissions");
 const jwt = require("jsonwebtoken");
 const users = require("../data/users.json");
 
+const port = 4001;
+
 const typeDefs = gql`
     type User @key(fields: "id") {
         id: ID!
@@ -63,6 +65,6 @@ const server = new ApolloServer({
     }
 });
 
-server.listen(4001).then(({url}) => {
+server.listen(port).then(({url}) => {
     console.log(`🔐 User service running at ${url}`);
 });
