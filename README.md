@@ -47,6 +47,8 @@ query {
 }
 ```
 
+_Requires `Authorization` Header_
+
 ## Get Products
 
 ```gql
@@ -75,6 +77,8 @@ query {
 }
 ```
 
+_Requires `Authorization` Header_
+
 ## Get Product
 
 ```gql
@@ -89,6 +93,8 @@ query {
 }
 ```
 
+_Requires `Authorization` Header_
+
 ## Update Product Status
 
 ```gql
@@ -102,3 +108,5 @@ mutation {
   }
 }
 ```
+
+_Requires `Authorization` Header_
