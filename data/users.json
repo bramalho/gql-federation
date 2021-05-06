@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "name": "Admin",
+    "email": "admin@app.dev",
+    "password": "admin",
+    "roles": [
+      "admin"
+    ],
+    "permissions": [
+      "read:any_user",
+      "read:own_user"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "User",
+    "email": "user@app.dev",
+    "password": "user",
+    "roles": [
+      "user"
+    ],
+    "permissions": [
+      "read:own_user"
+    ]
+  }
+]
