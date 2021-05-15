@@ -4,34 +4,44 @@
     "sku": "AAA111",
     "name": "Product 1",
     "price": 100,
-    "status": "PUBLISHED"
+    "status": "PUBLISHED",
+    "quantity": 10,
+    "warehouse": "Warehouse 1"
   },
   {
     "id": "2",
     "sku": "BBB222",
     "name": "Product 2",
     "price": 200,
-    "status": "WAITING"
+    "status": "WAITING",
+    "quantity": 0,
+    "warehouse": "Warehouse 2"
   },
   {
     "id": "3",
     "sku": "CCC333",
     "name": "Product 3",
     "price": 300,
-    "status": "REMOVED"
+    "status": "REMOVED",
+    "quantity": 0,
+    "warehouse": "Warehouse 1"
   },
   {
     "id": "4",
     "sku": "DDD444",
     "name": "Product 4",
     "price": 400,
-    "status": "PUBLISHED"
+    "status": "PUBLISHED",
+    "quantity": 10,
+    "warehouse": "Warehouse 2"
   },
   {
     "id": "5",
     "sku": "EEE555",
     "name": "Product 5",
     "price": 500,
-    "status": "PUBLISHED"
+    "status": "PUBLISHED",
+    "quantity": 10,
+    "warehouse": "Warehouse 1"
   }
 ]
