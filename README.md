@@ -5,6 +5,8 @@ npm install
 
 cd gateway && npm install && cd ../
 cd users && npm install && cd ../
+cd products && npm install && cd ../
+cd stock && npm install && cd ../
 
 npm run server
 ```
@@ -59,6 +61,10 @@ query {
     name
     price
     status
+    stock {
+      quantity
+      warehouse
+    }
   }
 }
 ```
@@ -73,6 +79,10 @@ query {
     name
     price
     status
+    stock {
+      quantity
+      warehouse
+    }
   }
 }
 ```
@@ -84,6 +94,26 @@ _Requires `Authorization` Header_
 ```gql
 query {
   product(id: 1) {
+    id
+    sku
+    name
+    price
+    status
+    stock {
+      quantity
+      warehouse
+    }
+  }
+}
+```
+
+_Requires `Authorization` Header_
+
+## Update Product Status
+
+```gql
+mutation {
+  updateProductStatus(id: 1, status: REMOVED) {
     id
     sku
     name
@@ -105,6 +135,19 @@ mutation {
     name
     price
     status
+  }
+}
+```
+
+_Requires `Authorization` Header_
+
+## Update Product Quantity
+
+```gql
+mutation {
+  updateProductQuantity(id: 1, quantity: 100) {
+    quantity
+    warehouse
   }
 }
 ```
